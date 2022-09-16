@@ -18,6 +18,7 @@ Installing GCC
 Google WinLips
 download latest release
 here you will see GCC+Clang compiler together Clang is from Apple
+
 1. extract the zip file and copy or move it to your c drive
 2. open the folder and copy to bin file path and paste on your windows environment variable
 3. to do this click on windows icon and seach env and open that
@@ -98,13 +99,12 @@ then if you click on configure tasks from terminal menu you will see cl.exe comp
 now change the tasks.json file level and arguement option
 like
 
-                        "/Zi",
+                "/Zi",
 				"/std:c++latest",
 				"/EHsc",
 				"/nologo",
-				"/Fe:",
 				"/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-				"${workspaceFolder}\\*.cpp"
+				"${file}"
 
 "{fileDirname}\\any-name.exe", use to get a perticular name.exe
 
