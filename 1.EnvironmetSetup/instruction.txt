@@ -1,7 +1,7 @@
 # cpp
 
 c and c++ programming
-you need a IDE
+you need an IDE
 and compiler
 
 IDE most popular 
