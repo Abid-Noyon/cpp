@@ -111,4 +111,10 @@ like
 There is a problem with mcsv compiler so do not change the argument file keep is as it is
 just add this line "/std:c++latest", to use the lastest c++
 
+#Now it's time write and edit code
+open new folder and open it with vs code
+configure tasks.json file to compile with different compiler
+and c++ version
+and start writing
+
 
