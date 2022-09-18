@@ -14,5 +14,6 @@ int main(){
     //This code will wite Hello World! in the console
     std::cout << "Hello World!" << std::endl;
     return 0;
+    // retun 0 used to see if the code run seccessfully or have any errors
     //program ends here
 }
