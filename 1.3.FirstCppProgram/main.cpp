@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-int main(){
+int main() {
 
     std::cout << "Number1" << std::endl;
     std::cout << "Number2" << std::endl;

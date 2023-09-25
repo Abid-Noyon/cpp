@@ -3,7 +3,7 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "Build with GCC 12.2.0",
+			"label": "Build with GCC 13.2.0",
 			"command": "C:\\mingw64\\bin\\g++.exe",
 			"args": [
 				"-fdiagnostics-color=always",
@@ -24,7 +24,7 @@
 		},
 		{
 			"type": "cppbuild",
-			"label": "Built with Clang 14.0.6",
+			"label": "Built with Clang 16.0.6",
 			"command": "C:\\mingw64\\bin\\clang++.exe",
 			"args": [
 				"-fcolor-diagnostics",
@@ -56,6 +56,28 @@
 				"/nologo",
 				"/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
 				"${file}"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+			"detail": "compiler: cl.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build with MSVC",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",
+				"/std:c++latest",
+				"/EHsc",
+				"/Fe:",
+				"/nologo",
+				"/Fe${fileDirname}\\rooster.exe",
+				"${workspaceFolder}\\*.cpp"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
