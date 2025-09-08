@@ -1,25 +1,28 @@
 #include <iostream>
 using namespace std;
 
-class Employee {
+class Employee
+{
 public:
     string name;
     string company;
     int age;
-    void introduce() {
+    void introduce()
+    {
         cout << "Name: " << name << ", Company: " << company << ", Age: " << age << endl;
     }
-    // Constructor to initialize the employee's attributes
-    Employee(string empName, string empCompany, int empAge) 
-        : name(empName), company(empCompany), age(empAge) {}
-    // Default constructor
+    // // Constructor to initialize the employee's attributes
+    Employee(string empName, string empCompany, int empAge) : name(empName), company(empCompany), age(empAge) {}
+    // // Default constructor
     Employee() : name(""), company(""), age(0) {} // Default constructor
-    // Destructor
+    // // Destructor
 };
 
-int main() {
+int main()
+{
 
-    Employee employee1= Employee("Abid Noyon", "Promely", 24); // Create an instance of the Employee class
+    Employee employee1 = Employee("Abid Noyon", "Promely", 24); // Create an instance of the Employee class
+    // Employee employee1;
 
     // older method of setting attributes
     // employee1.name = "John Doe"; // Set the name of the employee
