@@ -12,7 +12,7 @@ public:
     Factorial(int n)
     {
         num = n;
-        [cite_start]
+        // [cite_start]
     } // Constructor [cite: 4]
     int calculate()
     {
