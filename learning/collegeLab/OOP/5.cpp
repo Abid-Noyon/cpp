@@ -40,11 +40,39 @@ using namespace std;
 class bankAccount
 {
     float balance;
-    public:
+
+public:
     bankAccount()
     {
-        balance=0;
+        balance = 0;
     }
-    void deposit()
-    
+    void deposit(float amt)
+    {
+        balance += amt;
+        cout << "Deposited.\n";
+    }
+    void withdrawn(float amt)
+    {
+        if (amt > balance)
+            cout << "Insufficient balance.\n";
+        else
+        {
+            balance -= amt;
+            cout << "Withdrawn.\n";
+        }
+    }
+
+    void display()
+    {
+        cout << "Balance: " << balance << endl;
+    }
 };
+
+int main()
+{
+    bankAccount ac001;
+    ac001.deposit(1000);
+    ac001.withdrawn(800);
+    ac001.display();
+    return 0;
+}
